@@ -2,11 +2,11 @@
 	"manifest_version": 2,
 	"name": "Youtube Remove Recommendation Bar",
 	"description": "Addon to remove the recommendation bar on Youtube",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"author": "Lionel Mahistre",
 	"content_scripts": [
 		{
-			"matches": ["*://www.youtube.com/"],
+			"matches": ["*://www.youtube.com/*"],
 			"js": ["yrrb.js"]
 		}
 	],

@@ -12,5 +12,14 @@ const hideBar = function() {
 	}
 }
 
+const checkPathname = function() {
+	return window.location.pathname === '/';
+}
+
+window.setInterval(function() {
+	if (checkPathname()) {
+		hideBar();
+	}
+}, 1000);
+
 window.onload = hideBar;
-hideBar();
